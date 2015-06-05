@@ -1,0 +1,21 @@
+{
+  "name": "personalweb-V.2.1.0",
+  "version": "2.1.0",
+  "homepage": "https://github.com/Bespinoza10/personalweb-V.2.1.0",
+  "authors": [
+    "Brandon Espinoza <espinozab100@gmail.com>"
+  ],
+  "description": "Version 2.1.0 of my personal website. Fixing foramting bug",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4",
+    "jquery": "~2.1.4"
+  }
+}
