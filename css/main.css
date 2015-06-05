@@ -1,0 +1,213 @@
+@import url(http://fonts.googleapis.com/css?family=Qwigley);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
+
+body{
+  position: relative;
+  height: 100%;
+}
+
+.elslide{
+  background-image: url('../img/computer.jpg');
+  background-size: 100%;
+  background-attachment: fixed;
+  height: 750px;
+}
+
+div .navbar-brand{
+  font-family: 'Qwigley', cursive;
+  font-size: 40px;
+  color: #fff;
+}
+
+.profile{
+  margin-top: 250px;
+  width: 130px;
+  height: 170px;
+}
+
+.introH1{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #fff;
+  font-size: 50px;
+}
+.introP{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  color: #ffffff;
+
+}
+
+nav.navbar-default{
+  background: #fff;
+  border: none;
+}
+
+.h1Margins{
+  margin-left: 30px;
+}
+
+/************** * Carousel * **************/
+
+.carousel-control.left, .right{
+  display: none;
+}
+
+.carousel-caption{
+  top: 250px;
+
+}
+
+/************** * ABOUT ME * **************/
+
+#about{
+  margin-top: 100px;
+}
+
+.elemMargins{
+  margin-top: 100px;
+}
+
+.h1s{
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #000;
+  font-size: 40px;
+}
+
+.h3s{
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #000;
+  font-size: 20px;
+}
+.ps{
+  font-family: 'Open Sans Condensed', sans-serif;
+  color:#000;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.proHs{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #000;
+}
+
+div .progress{
+  height: 18px;
+  margin-top: 30px;
+}
+
+div .progress-bar{
+  background-color: #2F3238;
+}
+.skillDesc{
+  color: #ffffff;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 15px;
+}
+
+.skillPercent{
+  color: #ceb368;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 15px;
+}
+
+/************** * WHat I oFFER * **************/
+
+.iDo{
+ margin-top: 150px;
+ background-image: url('../img/poly-bg.jpg');
+ background-attachment: fixed;
+ background-size: 100%;
+}
+.whtIdo{
+  color: #fff;
+}
+
+.squares{
+  border: 2px solid #fff;
+  height: 265px;
+  margin-bottom: 25px;
+}
+.Squaresh3s{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  text-align: center;
+  color: #fff;
+}
+
+.squares:hover{
+  background: #fff;
+  border-color: #000;
+}
+
+.squares:hover > .Squaresh3s{
+  color:#000;
+}
+
+.squares:hover > .SquaresPs{
+  color:#000;
+}
+
+.SquaresPs{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color:#fff;
+}
+
+
+
+.dibujo{
+  margin-left: 10px;
+}
+
+/* CONTACT */
+
+.cont{
+  margin-top: 150px;
+}
+
+#contact{
+
+  background-image: url('../img/writing.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.contactH1{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 40px;
+  color:#000;
+}
+.contactHs{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+  color: #000000;
+  font-size: 18px;
+}
+
+button.btn-default{
+  background: #2F3238;
+  color:#fff;
+  border: none;
+  border-radius: none;
+  margin-top: 20px;
+}
+
+
+button.btn{
+  border-radius: none;
+}
+
+.fa{
+  font-size: 40px;
+  color: #2F3238;
+}
+
+.fa:hover{
+  font-size: 40px;
+  color: #ffffff;
+}
