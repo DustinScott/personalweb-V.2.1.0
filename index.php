@@ -13,7 +13,42 @@ include('includes/mail_script.php');
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-    <script type="text/javascript" src="emailkey/jquery.js"></script>
+    
+    
+    <script src="js/jquery.js" type="text/javascript"></script>
+	<script src="js/jquery.scrollTo.js" type="text/javascript"></script>
+	<script src="js/jquery.localscroll.js" type="text/javascript"></script>
+	
+	<!-- javascript that will initiate jQuery and the LocalScroll plugin -->
+	<script>
+	
+	// When the document is loaded...
+    $(document).ready(function()
+	{
+		// Scroll the whole document 
+		$('#navy').localScroll({
+		   target:'body'
+		});
+		
+		$('#').localScroll({
+		   target:'body'
+		});
+		
+		$('#about').scrollTo( 0, 100);({
+		   target:'#about'
+		});
+		
+		// Scroll the content inside the #scroll-container div
+		$('#').localScroll({
+		   target:'#about'
+		});
+		
+	});
+    </script>
+
+	
+	
+	
   </head>
 <!--   <body> -->
   <body data-spy="scroll" data-target="navbar-nav">
@@ -31,13 +66,15 @@ include('includes/mail_script.php');
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div id="navy" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+           
             <li><a href="#about">About</a></li>
             <li><a href="#iDo">What I Do</a></li>
             <li><a href="#clients">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
+           
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -206,7 +243,7 @@ $if_show = 'style="display:inherit;"';
  
     
     
-    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+<!--     <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script> -->
     <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     
