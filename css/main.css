@@ -211,3 +211,45 @@ button.btn{
   font-size: 40px;
   color: #ffffff;
 }
+
+/* CONTACT SELECTOR */
+
+#con_sel{
+display:none;
+font-family: 'Open Sans Condensed', sans-serif;	
+}
+
+#choozEMAIL{
+float:left;
+font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#choozEMAIL ul{
+float:left;
+width:180px;
+
+margin:0px 10px 10px 0px;
+padding:0px;
+}
+
+#choozEMAIL li{
+list-style:none;
+
+}
+
+#choozEMAIL img{
+width:130px;
+height:130px;
+border-radius:50%;
+border-bottom:2px solid #ccc;
+
+}
+
+
+#addNEW{
+float:left;
+}
+
+.EmailChoiz{
+text-align:center;	
+}

@@ -1,3 +1,11 @@
+<?php include('includes/ewp.php');
+
+$siteName = "DustinsSite";
+	
+include('includes/mail_script.php');   
+
+?> 
+
 <html>
   <head>
     <title>Brandon Espinoza | Front-End Developer</title>
@@ -5,6 +13,7 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <script type="text/javascript" src="emailkey/jquery.js"></script>
   </head>
 <!--   <body> -->
   <body data-spy="scroll" data-target="navbar-nav">
@@ -90,8 +99,10 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-6 elemMargins">
-        <img class="img-responsive" src="img/profile.png">
+      <div class="col-lg-6 elemMargins" >
+
+<img class="img-responsive" src="img/profile.png">
+
       </div>
     </div>
 
@@ -133,36 +144,71 @@
       </div>
     </div>
 <!--------------- * Contact Form * ----------------->
+
+
+	
+
+
+
     <div id="contact" class="col-lg-12 cont">
       <div class="container">
         <div class="row">
-          <form class="col-lg-8 col-lg-offset-2">
+	        
+	        
+          <form  action="" method="post" class="col-lg-8 col-lg-offset-2">
             <h1 class="whtIdo h1s contactH1 cont">Contact</h1>
             <div class="form-group">
               <label class="contactHs">Full Name:</label>
-              <input type="text" class="form-control" placeholder="John Smith">
+              <input type="text" name="Name" class="form-control" value="<?php get_data('Name'); ?>" placeholder="John Smith">
             </div>
             <div class="form-group">
               <label class="contactHs">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="john@smith.com">
+              <input type="email" name="Email" class="form-control" id="exampleInputEmail1" value="<?php get_data("Email"); ?>" placeholder="john@smith.com">
             </div>
 
             <label class="contactHs">Your Message</label>
-            <textarea class="form-control" rows="3" placeholder="Hello this is my message"></textarea>
+            <textarea class="form-control" rows="3" name="Comments" placeholder="Hello this is my message"><?php get_data("Comments"); ?></textarea>
             <button type="submit" class="btn btn-default btn-lg contactHs">Submit</button>
           </form>
+          
+               
           <div class="col-lg-4">
-            <a target="_blank" href="htpp://www.github.com/bespinoza10"><i class="fa fa-github"></i>
-            <a target="_blank" href="https://www.linkedin.com/in/bespinoza10"><i class="dibujo fa fa-linkedin"></i>
+            <a target="_blank" href="htpp://www.github.com/bespinoza10"><i class="fa fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/bespinoza10"><i class="dibujo fa fa-linkedin"></i></a>
           </div>
         </div>
       </div>
     </div>
+    
+<!--  EMAIL SYSTEM INSTALL -->
 
+<?php
+$mailer_change = $_GET['mailer'];
 
+if(!empty($mailer_change)){
 
+$if_show = 'style="display:inherit;"';
+
+}
+	
+?>	
+    <div <?php echo $if_show; ?> id="con_sel" class="col-lg-12 cont">
+     <div class="container" >
+        <div class="row">
+         
+         <?php include('emailkey/emailer.php')?>
+         
+          
+         </div>
+      </div>
+    </div>
+ 
+ 
+    
+    
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    
   </body>
 </html>
